@@ -12,6 +12,11 @@ public class BasicCalculatorTest {
 	Random random = new Random();
 	private static final Logger LOG = Logger.getLogger(BasicCalculator.class.getName());
 	
+	/**
+	 * @author Lina Nema & MUntha Mahmod
+	 * @param Testing the method with Addition.
+	 */
+	
 
 	@Test
 	public void testAddition() {
@@ -27,7 +32,9 @@ public class BasicCalculatorTest {
 			assertEquals(bc.add(firstNumber, secondNumber), result, 0);
 		}
 	}
-		
+	/**
+	 * @param Testing the method with Subtracktion.
+	 */
 		@Test
 		public void testSubtracktion() {
 			double firstNumber = 0.0;
@@ -42,6 +49,10 @@ public class BasicCalculatorTest {
 				assertEquals(bc.subtrackt(firstNumber, secondNumber), result, 0);
 			}
 		}
+		
+		/**
+		 * @param Testing the method with Multiplication
+		 */
 		@Test
 		public void testMultiplication() {
 			double firstNumber = 0.0;
@@ -57,6 +68,9 @@ public class BasicCalculatorTest {
 			}
 		}
 				
+		/**
+		 * @param Testing the method with Division.
+		 */
 		@Test
 		public void testDivision() {
 			double firstNumber = 0.0;

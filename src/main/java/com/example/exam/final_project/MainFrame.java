@@ -2,6 +2,8 @@ package com.example.exam.final_project;
 
 
 import java.awt.EventQueue;
+
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +14,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+/**
+ * 
+ * @author Lina Nema & Muntha Mahmod
+ * @param Nedan har vi skapat en miniräknare, med hjälp av olika funktioner.
+ * @param Miniräknaren hjälper oss att få fram resultat av olika räknesätt. 
+ *
+ */
 public class MainFrame {
 
     private JFrame frmCalculator;
@@ -47,6 +56,7 @@ public class MainFrame {
     /**
      * Initialize the contents of the frame.
      */
+   
     private void initialize() {
         frmCalculator = new JFrame();
         frmCalculator.setTitle("Calculator");
@@ -86,6 +96,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för additions räknesätt. 
+                 */
                
             }
         });
@@ -102,6 +117,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för subtracktions räknesätt. 
+                 */
                
             }
         });   
@@ -121,6 +141,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för multiplikations räknesätt. 
+                 */
                
             }
         });
@@ -141,6 +166,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för divisions räknesätt. 
+                 */
                
             }
         });
@@ -158,6 +188,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för sin räknesätt. 
+                 */
                
             }
         });
@@ -175,6 +210,10 @@ public class MainFrame {
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för cos räknesätt. 
+                 */
             }
         });
        
@@ -185,6 +224,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för hur man får fram PI räknesätt. 
+                 */
                
             }
         });
@@ -205,6 +249,11 @@ public class MainFrame {
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
                 tfSecondNumber.setText("");
+                
+                /**
+                 * @param 
+                 * Vi skapade en funktion för Pow räknesätt. 
+                 */
                
             }
         });
@@ -214,27 +263,27 @@ public class MainFrame {
         frmCalculator.getContentPane().add(btnProcent);
         btnProcent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                double firstNumber = Double.parseDouble(tfFirstNumber.getText().toString());
-                double secondNumber = Double.parseDouble(tfSecondNumber.getText().toString());
+                double firstNumber = Double.parseDouble(tfFirstNumber.getText().toString()); 
                
-                double result = ac.procent(firstNumber, secondNumber);
+                double result = ac.procent(firstNumber);
                 lblResult.setText("Result: "+result);
                 tfFirstNumber.setText("");
-                tfSecondNumber.setText("");
-               
-            }
+        
+                /**
+                 * @param 
+                 * Vi skapade en funktion för hur man får fram procents räknesätt. 
+                 */
+               }
         });
        
         JButton btnE = new JButton("e");
         btnE.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                double result = ac.eulers();
-                lblResult.setText("Result: "+result);
-                tfFirstNumber.setText("");
-                tfSecondNumber.setText("");
-               
-               
-            }
+           public void actionPerformed(ActionEvent e) {
+            double secondNumber = Double.parseDouble(tfSecondNumber.getText().toString());
+            double result = ac.eulers(secondNumber);
+            lblResult.setText("Result: "+result);
+            tfSecondNumber.setText("");
+              }
         });
         btnE.setBounds(139, 212, 55, 25);
         frmCalculator.getContentPane().add(btnE);
@@ -242,5 +291,10 @@ public class MainFrame {
        
         lblResult.setBounds(46, 81, 193, 15);
         frmCalculator.getContentPane().add(lblResult);
+        
+        /**
+         * @param 
+         * Vi skapade en funktion för hur man kan få fram eulers räknesätt. 
+         */
     }
 }

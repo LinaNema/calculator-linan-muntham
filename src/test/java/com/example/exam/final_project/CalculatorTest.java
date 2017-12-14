@@ -36,6 +36,9 @@ public class CalculatorTest {
 			assertEquals(exCalculateDegreesToRadians(valueToBeConverted), aC.radiansToDegrees(valueToBeConverted), 1);
 		}
 	}
+	/**
+	 *@param Testing the method with Sin. 
+	 */
 
 	@Test
 	public void testSin() {
@@ -49,6 +52,9 @@ public class CalculatorTest {
 			assertEquals(aC.sin(firstNumber), result, 0.1);
 		}
 	}
+	/**
+	 * @param Testing the method with Cos.
+	 */
 
 	@Test
     public void testCos() {
@@ -62,7 +68,9 @@ public class CalculatorTest {
             assertEquals(aC.cos(firstNumber),result, 0.1);
         }
     }
-	
+/**
+ * @param Testing the method pow
+ */
 	@Test
     public void testPow() {
         double firstNumber = 0.0;
@@ -70,12 +78,45 @@ public class CalculatorTest {
         double result = 0.0;
        
         for (int i = 0; i < 50; i++) {
-            firstNumber = random.nextDouble() * 2 * Math.PI;
-            secondNumber = random.nextDouble() * 2 * Math.PI;
+            firstNumber = random.nextDouble() * 100;
+            secondNumber = random.nextDouble() * 5;
             result = Math.pow(firstNumber, secondNumber);
             LOG.info("Testing the method pow with"+ firstNumber +"and" + secondNumber);
             assertEquals(aC.pow(firstNumber , secondNumber),result, 0.1);
            
         }
     }
+	@Test
+    public void testProcent() {
+        double firstNumber = 0.0;
+        double result = 0.0;
+       
+        for (int i = 0; i < 50; i++) {
+            firstNumber = random.nextDouble() * 100;
+            result = (firstNumber / 100);
+            LOG.info("Testing the method procent with"+ firstNumber);
+            assertEquals(aC.procent(firstNumber),result, 0);
+            
+            /**
+        	 * @param Testing the method with Procent.
+        	 */
+        }
+	}
+	
+	@Test
+    public void testEulers() {
+        double secondNumber = 0.0;
+        double result = 0.0;
+       
+        for (int i = 0; i < 50; i++) {
+            secondNumber = random.nextDouble() * 20;
+            result = Math.exp( secondNumber);
+            LOG.info("Testing the method eulers with"+ secondNumber);
+            assertEquals(aC.eulers(secondNumber),result, 0.01);
+            
+            /**
+        	 * @param Testing the method with Eulers.
+        	 */
+        }
+	}
 }
