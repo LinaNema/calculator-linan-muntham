@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2535" started-at="2017-12-14T13:24:33Z" finished-at="2017-12-14T13:24:35Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="2535" started-at="2017-12-14T13:24:33Z" finished-at="2017-12-14T13:24:35Z">
+      <class name="com.example.exam.final_project.CalculatorTest">
+        <test-method status="PASS" signature="testCos()[pri:0, instance:testCos(com.example.exam.final_project.CalculatorTest)]" name="testCos" duration-ms="333" started-at="2017-12-14T14:24:33Z" finished-at="2017-12-14T14:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos -->
+        <test-method status="PASS" signature="testPow()[pri:0, instance:testPow(com.example.exam.final_project.CalculatorTest)]" name="testPow" duration-ms="391" started-at="2017-12-14T14:24:34Z" finished-at="2017-12-14T14:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPow -->
+        <test-method status="PASS" signature="testSin()[pri:0, instance:testSin(com.example.exam.final_project.CalculatorTest)]" name="testSin" duration-ms="302" started-at="2017-12-14T14:24:34Z" finished-at="2017-12-14T14:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSin -->
+        <test-method status="PASS" signature="testDegreesToRadians()[pri:0, instance:testDegreesToRadians(com.example.exam.final_project.CalculatorTest)]" name="testDegreesToRadians" duration-ms="27" started-at="2017-12-14T14:24:34Z" finished-at="2017-12-14T14:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDegreesToRadians -->
+      </class> <!-- com.example.exam.final_project.CalculatorTest -->
+      <class name="com.example.exam.final_project.BasicCalculatorTest">
+        <test-method status="PASS" signature="testMultiplication()[pri:0, instance:testMultiplication(com.example.exam.final_project.BasicCalculatorTest)]" name="testMultiplication" duration-ms="131" started-at="2017-12-14T14:24:35Z" finished-at="2017-12-14T14:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method status="PASS" signature="testAddition()[pri:0, instance:testAddition(com.example.exam.final_project.BasicCalculatorTest)]" name="testAddition" duration-ms="216" started-at="2017-12-14T14:24:35Z" finished-at="2017-12-14T14:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method status="PASS" signature="testDivision()[pri:0, instance:testDivision(com.example.exam.final_project.BasicCalculatorTest)]" name="testDivision" duration-ms="145" started-at="2017-12-14T14:24:35Z" finished-at="2017-12-14T14:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method status="PASS" signature="testSubtracktion()[pri:0, instance:testSubtracktion(com.example.exam.final_project.BasicCalculatorTest)]" name="testSubtracktion" duration-ms="205" started-at="2017-12-14T14:24:35Z" finished-at="2017-12-14T14:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtracktion -->
+      </class> <!-- com.example.exam.final_project.BasicCalculatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BasicCalculator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-linan-muntham</a> &gt; <a href="index.source.html" class="el_package">com.example.exam.final_project</a> &gt; <span class="el_source">BasicCalculator.java</span></div><h1>BasicCalculator.java</h1><pre class="source lang-java linenums">package com.example.exam.final_project;
+
+//import java.util.Scanner;
+//import java.util.Locale;
+import java.util.Scanner;
+
+/**
+* Simple Calculator. With 4 operations, 2 of them is variables without
+* exceptions and while loop.
+*
+* @author Muntha Mahmod and Lina Nema
+*
+*/
+
+<span class="fc" id="L15">public class BasicCalculator implements BasicCalculatorInterface {</span>
+<span class="fc" id="L16">  Scanner scan = new Scanner(System.in);</span>
+
+  public void showMenu() {
+<span class="nc" id="L19">      System.out.println(&quot;1.Addition&quot;);</span>
+<span class="nc" id="L20">      System.out.println(&quot;2.Subtracktion&quot;);</span>
+<span class="nc" id="L21">      System.out.println(&quot;3.Multiplication&quot;);</span>
+<span class="nc" id="L22">      System.out.println(&quot;4.Division&quot;);</span>
+
+<span class="nc" id="L24">  }</span>
+
+  /**
+   *
+   * @param firstNumber
+   *            - as a double
+   * @param secondNumber
+   *            - as a double
+   * @return För att få fram resultat av addition.
+   */
+
+  public double add(double firstNumber, double secondNumber) {
+<span class="fc" id="L36">      return firstNumber + secondNumber;</span>
+
+  }
+
+  /**
+   *
+   * @param firstNumber
+   *            - as a double
+   * @param secondNumber
+   *            - as a double
+   * @return För att få fram resultat av subtracktion.
+   */
+
+  public double subtrackt(double firstNumber, double secondNumber) {
+<span class="fc" id="L50">      return firstNumber - secondNumber;</span>
+
+  }
+
+  /**
+   *
+   * @param firstNumber
+   *            - as a double
+   * @param secondNumber
+   *            - as a double
+   * @return För att få fram resultat av multiplication.
+   */
+  public double multiply(double firstNumber, double secondNumber) {
+<span class="fc" id="L63">      return firstNumber * secondNumber;</span>
+
+  }
+
+  /**
+   *
+   * @param firstNumber
+   *            - as a double
+   * @param secondNumber
+   *            - as a double
+   * @return För att få fram resultat av division.
+   */
+  public double divide(double firstNumber, double secondNumber) {
+<span class="pc bpc" id="L76" title="1 of 2 branches missed.">      if (secondNumber == 0) {</span>
+<span class="nc" id="L77">          System.out.println(&quot;Error! Dividing by zero is not allowed&quot;);</span>
+<span class="nc" id="L78">          return 0;</span>
+      } else {
+<span class="fc" id="L80">          return firstNumber / secondNumber;</span>
+      }
+  }
+
+  public double modulo(double firstNumber, double secondNumber) {
+<span class="nc bnc" id="L85" title="All 2 branches missed.">      if (secondNumber == 0) {</span>
+<span class="nc" id="L86">          System.out.println(&quot;Error! Dividing by zero is not allowed&quot;);</span>
+
+      } else {
+<span class="nc" id="L89">          return firstNumber / secondNumber;</span>
+      }
+<span class="nc" id="L91">      return secondNumber;</span>
+
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
